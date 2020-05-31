@@ -1,0 +1,160 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{ /* Fondo background*/
+    background:url(../Imagenes/back.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.main { /* Caracteristicas de toda la pagina */
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.login { /* Barra superior de login */
+    background: #4682B4;
+    font-size: 20px;
+    font-family: Helvetica;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    text-align: right;
+    padding: 10px;
+}
+
+.login li { /* Margen al Iniciar Sesion */
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.casita {
+    float: right;
+}
+
+.login li a { /* Margen y padding al Iniciar sesión + color */
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    color: #DAA520;
+}
+
+.login li a:hover { /* Color al señalar Iniciar Sesion */
+    color: rgb(237, 255, 133);
+}
+
+.navegacion { /* Menu de navegacion */
+    list-style: none;
+    background: #4682B4;
+    text-align: center;
+    margin-top: -4px;
+}
+
+.navegacion li{ /* Menu de navegacion, desplazamiento en horizontal*/
+    display: inline-block;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.navegacion li a{ /* Diseño de botones de navegacion */
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: verdana;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    background: #064D85;
+}
+
+.navegacion li a:hover { /* Efecto al señalar botones */
+    padding-top: 12px;
+    background: rgb(9, 96, 163);
+}
+
+.relleno { /* Relleno debajo del menu de navegacion */
+    color:white;
+    text-align: center;
+    background:#064D85;
+}
+
+#contenedorcuerpo { /* Div general del body */
+    width: 70%;
+    margin-left: 20px;
+    display:inline-block;
+    border: 1px #fff;
+/*    background:url(../Imagenes/fondobody.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid #000;
+    background-size: 200%;*/
+}
+
+.blogtxt{ /* Titulo body */
+    margin-top: 2%;
+    font-size:30px;
+    font-family: impact;
+}
+
+.sidebar{
+    position: inline-block;
+    margin-bottom: 50%;
+    background:white;
+    width: 20%;
+    float: right;
+    margin-right: 20px;
+    border: 1px solid #000;
+    margin-top: 20px;
+
+}
+
+.pie{
+    background:rgb(9, 96, 163);
+    margin-top: 5%;
+    padding: 10px;
+    font-size: 25px;
+    font-family: impact;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.seccion1, .seccion2, .seccion3, .seccion4, .seccion5{
+    background: #4682B4;
+    display: inline-block;
+    float: right;
+}
+
+.seccion1 ul, .seccion2 ul, .seccion3 ul, .seccion4 ul, .seccion5 ul{
+    list-style: none;
+    float: left;;
+}
+
+.seccion1 img, .seccion2 img, .seccion3 img, .seccion4 img, .seccion5 img{
+    float: left;
+    margin: 20px;
+}
+
+.seccion1:hover, .seccion2:hover, .seccion3:hover, .seccion4:hover, .seccion5:hover{
+    background: #064D85;
+    cursor:link;
+}
+
+.art1, .art2, .art3, .art4, .art5 {
+    margin-top: 20px;
+}
+
+.pie-act{
+    color:yellow;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.pie-act a{
+    color:yellow;
+    text-decoration: none;
+}
