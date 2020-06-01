@@ -17,40 +17,9 @@ body{ /* Fondo background*/
     display: block;
 }
 
-.login { /* Barra superior de login */
-    background: #4682B4;
-    font-size: 20px;
-    font-family: Helvetica;
-    border-radius: 5px;
-    border: 2px solid #ccc;
-    text-align: right;
-    padding: 10px;
-}
-
-.login li { /* Margen al Iniciar Sesion */
-    display: inline-block;
-    margin: 0px;
-    padding: 0px;
-}
-
-.casita {
-    float: right;
-}
-
-.login li a { /* Margen y padding al Iniciar sesión + color */
-    text-decoration: none;
-    padding: 10px;
-    margin: 5px;
-    color: #DAA520;
-}
-
-.login li a:hover { /* Color al señalar Iniciar Sesion */
-    color: rgb(237, 255, 133);
-}
-
 .navegacion { /* Menu de navegacion */
     list-style: none;
-    background: #4682B4;
+    background: rgba(0, 0, 0, 0.7);
     text-align: center;
     margin-top: -4px;
 }
@@ -71,28 +40,28 @@ body{ /* Fondo background*/
     border-top-left-radius: 30%;
     border-top-right-radius: 30%;
     background: #064D85;
+    border: 1px solid white;
+    background: url(../Imagenes/degrade.jpg);
 }
 
 .navegacion li a:hover { /* Efecto al señalar botones */
     padding-top: 12px;
     background: rgb(9, 96, 163);
+    background: url(../Imagenes/bodydegrade.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .relleno { /* Relleno debajo del menu de navegacion */
     color:white;
     text-align: center;
-    background:#064D85;
+    background: url(../Imagenes/degrade.jpg);
 }
 
 #contenedorcuerpo { /* Div general del body */
     width: 70%;
     margin-left: 20px;
     display:inline-block;
-    border: 1px #fff;
-/*    background:url(../Imagenes/fondobody.jpg);
-    background-repeat: no-repeat;
-    border: 1px solid #000;
-    background-size: 200%;*/
 }
 
 .blogtxt{ /* Titulo body */
@@ -101,32 +70,28 @@ body{ /* Fondo background*/
     font-family: impact;
 }
 
-.sidebar{
-    position: inline-block;
-    margin-bottom: 50%;
-    background:white;
-    width: 20%;
-    float: right;
-    margin-right: 20px;
-    border: 1px solid #000;
-    margin-top: 20px;
-
-}
-
 .pie{
     background:rgb(9, 96, 163);
-    margin-top: 5%;
+    margin-top: 10%;
     padding: 10px;
     font-size: 25px;
     font-family: impact;
     text-align: center;
     opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    color: white;
+}
+
+.pie:hover{
+    color: orange;
 }
 
 .seccion1, .seccion2, .seccion3, .seccion4, .seccion5{
     background: #4682B4;
     display: inline-block;
     float: right;
+    color: white;
 }
 
 .seccion1 ul, .seccion2 ul, .seccion3 ul, .seccion4 ul, .seccion5 ul{
@@ -157,4 +122,49 @@ body{ /* Fondo background*/
 .pie-act a{
     color:yellow;
     text-decoration: none;
+}
+
+h3 {
+    text-align: left;
+    font-family: arial;
+    margin-left: 27px;
+    font-size: 16px;
+    color: white;
+}
+
+.opc{
+    list-style: none;
+    padding: 10px;
+}
+
+.opc a{
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 10px;
+    display: block;
+    border: 1px solid white;
+    background: url(../Imagenes/degrade.jpg);
+    width: 85%;
+}
+
+.opc a:hover{
+    text-decoration: none;
+    color: white;
+    background: red;
+    padding: 10px;
+    display: block;
+    background: url(../Imagenes/bodydegrade.jpg);
+}
+
+.sidebar{
+    position: inline-block;
+    margin-bottom: 50%;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: url(../Imagenes/sidebar.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
