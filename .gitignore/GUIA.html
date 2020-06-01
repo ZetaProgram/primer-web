@@ -1,33 +1,51 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Default</title>
-	<meta name="description" content="DESCRIPCIÓN DEL SITIO">
-	<link rel="stylesheet" type="text/css" href="estilos.css">
-</head>
-<body>
-</body>
-</html>
 
-CSS:
-
-
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 DIVISIÓN DENTRO DE UN DIV
  display: grid; (para informarle que usaremos grid)
  grid-template-columns: 1fr 1fr 1f4; (1fr define cuantas columnas)
- grid-gap: 20xpx; (Distancia entre si)
-
-LINKS
-a:link
-a:hover (Al pasar mouse)
-a:visited (Link visitado)
-a:active (Link clickeado)  
-
-
-IMAGENES
-border-radius:Xpx; (Redondear una imagen, acepta porcentajes)
-
+ grid-gap: 20xpx; (Distancia entre si) 
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 z-index: 1; (pasar imagen al frente)
 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.sort (ORDENAR [])
+.concat (UNIR DOS VARIABLES [])
+.pop (ELIMINAR ULTIMO VALOR DENTRO DE [])
+.push (AGREGAR VALOR AL ULTIMO [], DENTRO)
+.lenght (CUENTA LA CANTIDAD DENTRO DE [])
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+if( condicion ){
+	<!--INSTRUCCIONES AQUI SI SE CUMPLE-->
+} else {
+   <!--INSTRUCCIONES AQUI SI NO SE CUMPLE-->
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+for(variable = ?; variable <= ?; variable++){
+	<!--FUNCION PARA REPETIR MISMO TEXTO
+		EN EL SEGUNDO ? DEFINIR CUANTAS VECES-->
+}
+for(var zeta = 1; zeta <= 10; zeta++){
+	document.write("Hola + '<br>' ");<!-- ACA ENVIARÁ HOLA 10 VECES, SE PUEDE CAMBIAR EL HOLA POR LA VARIABLE Y OBTENDEMOS ENUMERACIÓN -->
+} 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+var prueba = function(valor1,valor2){ <!--CALCULADORA EJ: si valor 1 es mayor que valor2, ilustrar valor1, de lo contrario ilustrar valor2-->
+	if (valor1 > valor2){
+		return valor1; <!--RETURN SE USA PARA NO USAR DOCUMENT.WRITE-->
+	} return valor2;
+}
+
+	document.write(prueba(12400142,61236161)); <!-- AQUI LLAMAMOS LA FUNCIÓN FUERA DEL SCRIPT-->
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+var calculadora = function(suma1,suma2){ <!-- CALCULADORA EN FORMULARIO -->
+	var suma1 = parseFloat(document.getElementById("boton1").value);
+	var suma2 = parseFloat(document.getElementById("boton2").value);
+
+	var resultado = suma1 + suma2;
+	return resultado;
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

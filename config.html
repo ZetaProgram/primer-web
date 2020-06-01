@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <form>
+            <input type="text" id="boton1">
+            <input type="text" id="boton2">
+            <input type="button" value="HACER LA MARAVILLA" onclick="alert(calculadora())">
+        </form>
+    </div>
+
+    <script>
+
+        var calculadora = function(suma1,suma2){
+            var suma1 = parseFloat(document.getElementById("boton1").value);
+            var suma2 = parseFloat(document.getElementById("boton2").value);
+
+            var resultado = suma1 + suma2;
+            return resultado;
+        }
+
+    </script>
+</body>
+</html>
